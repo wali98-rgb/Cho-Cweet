@@ -1,0 +1,36 @@
+:root {
+    --pri: rgb(228, 34, 120);
+    --sec: rgb(237, 123, 171);
+    --thr: rgb(245, 211, 221);
+    --bag: rgb(249, 249, 249);
+    --fonc: #FFFFFF;
+    --fon2: #0D111A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "outfit", sans-serif;
+    /* font-family: "Noto-Serif", serif; */
+    background-color: var(--bag);
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 20%; */
+    min-height: 100dvh;
+}
+
+.layer-body {
+    display: none;
+    transition: .2s ease;
+    z-index: 990;
+}

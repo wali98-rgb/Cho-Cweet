@@ -1,0 +1,223 @@
+.jb {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* .jb::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(0deg, rgba(237, 123, 171, 1) 8%, rgba(237, 123, 171, 0) 50%);
+    bottom: 0;
+} */
+
+.jb img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.jb .head-jb {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5%;
+    color: var(--fonc);
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+}
+
+.jb .head-jb .head-ttl h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Lobster Two', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 0 1rem var(--pri);
+}
+
+.jb .head-jb .head-ttl p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Main About */
+.abouts {
+    padding: 1rem 5%;
+    display: flex;
+}
+
+.abouts .main-img {
+    width: 50%;
+    margin: 0 2rem 0 0;
+}
+
+.abouts .main-img .pub-img {
+    width: 100%;
+    border-radius: .3rem;
+    box-shadow: 0 0 10px 1px silver;
+}
+
+.abouts .main-ab {
+    width: 100%;
+}
+
+.abouts .main-ab p {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.visi {
+    background-color: var(--thr);
+    padding: 1rem 5%;
+    color: var(--fon2);
+}
+
+.visi h1 {
+    margin: 0;
+    padding: 0 0 2rem;
+    text-align: center;
+    font-family: "Lobster Two", sans-serif;
+    /* text-shadow: 0 0 1rem white; */
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.visi p {
+    margin: 0;
+    padding: 0 0 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.visi .visi-img {
+    display: flex;
+    justify-content: center;
+}
+
+.visi .visi-img .cards-visi {
+    /* margin: 0 .2rem; */
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+    color: var(--fonc);
+    border-radius: 100%;
+    /* box-shadow: 0 0 10px 1px silver; */
+}
+
+.visi .visi-img .cards-visi img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+    display: block;
+    background-color: none;
+    box-shadow: none;
+}
+
+/* .visi .visi-img .cards-visi img:hover {
+    padding: .3rem;
+    box-shadow: 0 0 10px 1px var(--sec);
+    background: linear-gradient(170deg, rgba(237, 123, 171, 1) 8%, rgba(245, 211, 221, 1) 120%);
+    background-color: var(--sec);
+} */
+
+.visi .visi-img .cards-visi .desc-card {
+    padding: 0 1.5rem 0;
+    top: 57%;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    /* background-color: rgba(237, 123, 171, .6); */
+    background: linear-gradient(160deg, rgba(228, 34, 120, .6) 8%, rgba(237, 123, 171, .6) 80%);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    transition: .5s;
+    opacity: 0;
+    border-radius: 100%;
+}
+
+.visi .visi-img .cards-visi:hover .desc-card {
+    opacity: 1;
+    top: 0;
+}
+
+.visi .visi-img .cards-visi .desc-card h3 {
+    /* padding: 1.5rem 0 0; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Lobster Two", sans-serif;
+}
+
+.visi .visi-img .cards-visi .desc-card p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1.2rem;
+}
+
+.visi .visi-img .cards-visi>.visi .visi-img .cards-visi .desc-card {
+    transform: translateY(25px);
+    transition: transform .5s;
+}
+
+.visi .visi-img .cards-visi:hover>.visi .visi-img .cards-visi .desc-card {
+    transform: translateY(0px);
+}
+
+.misi {
+    display: flex;
+    padding: 1rem 5%;
+}
+
+.misi .misi-main {
+    width: 60%;
+}
+
+.misi .misi-main h1 {
+    padding: 0 0 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: "Lobster Two", sans-serif;
+}
+
+/* .misi .misi-main .content-misi table tr .td {
+    height: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+.misi .misi-main .content-misi table tr td i {
+    margin: 0 1rem 0 0;
+    font-size: 2.1rem;
+    color: var(--pri);
+}
+
+.misi .misi-main .content-misi table tr td p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.misi .misi-img {
+    width: 40%;
+}
+
+.misi .misi-img .ms-img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.misi .misi-img .ms-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}

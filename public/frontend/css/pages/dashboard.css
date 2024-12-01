@@ -1,0 +1,376 @@
+.ads {
+    padding: 1rem 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.ads .ads-img {
+    width: 80%;
+}
+
+.ads .ads-img .image {
+    border-radius: .3rem;
+    margin: .8rem 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    transition: all .2s ease-in;
+}
+
+.ads .ads-img .image:hover {
+    transform: scale(1.1);
+}
+
+/* Story Start */
+.story {
+    padding: 2rem 7%;
+}
+
+.story .head-story {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 1.8rem;
+}
+
+.story .head-story .ttl-story {
+    width: 100%;
+}
+
+.story .head-story .ttl-story h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.story .head-story .ttl-story h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.story .head-story .img-story {
+    width: 10%;
+    transition: .5s;
+    position: relative;
+}
+
+.story .head-story .img-story img {
+    width: 100%;
+    animation: turn 1s alternate infinite;
+}
+
+@keyframes turn {
+    from {
+        transform: rotate(-20deg);
+    }
+
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.story .head-story .img-story:hover {
+    transform: scale(1.3);
+}
+
+.story .head-story .img-story::before {
+    position: absolute;
+    content: "";
+    left: 0%;
+    top: 0%;
+    width: 105%;
+    height: 105%;
+    background: none;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.story .head-story .img-story:hover::before {
+    border: 1px solid var(--pri);
+}
+
+.story p {
+    margin: 0 0 1.5rem;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.story .cta-story {
+    display: flex;
+    justify-content: center;
+}
+
+.story .cta-story a {
+    text-decoration: none;
+    padding: .3rem 1rem;
+    border-radius: .3rem;
+    background: linear-gradient(120deg, rgb(228, 34, 120) 10%, rgb(237, 123, 171) 150%);
+    color: var(--fonc);
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: .2s ease;
+}
+
+.story .cta-story a:hover {
+    background: linear-gradient(120deg, rgb(237, 123, 171) 30%, rgb(228, 34, 120) 100%);
+    transform: scale(1.1);
+}
+
+/* Product CSS */
+.products {
+    padding: 2rem 7%;
+}
+
+.products .head-product, .others .head-other {
+    display: flex;
+    justify-content: center;
+}
+
+.products .head-product h2, .others .head-other h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0 0 1.4rem;
+}
+
+.products .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+.products .product .cardsp {
+    border: .2px solid silver;
+    border-radius: .3rem;
+    width: 18rem;
+    height: 18rem;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+
+/* .products .product .cardsp .cardp-img {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: .3rem;
+    align-items: center;
+} */
+
+.products .product .cardsp img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .5s;
+}
+
+.products .product .cardsp .cardp-name {
+    position: absolute;
+    padding: .5rem;
+    height: 100%;
+    left: 0%;
+    top: 100%;
+    background: linear-gradient(120deg, rgba(228, 34, 120, .8) 5%, rgba(237, 123, 171, .8) 120%);
+    color: var(--fonc);
+    transition: .5s;
+}
+
+.products .product .cardsp:hover {
+    transform: scale(1.1);
+}
+
+.products .product .cardsp:hover .cardp-name {
+    top: 40%;
+    z-index: 2;
+}
+
+.products .product .cardsp:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.products .product .cardsp .cardp-name h4 {
+    padding: 0 0 .8rem;
+    font-size: 1.7rem;
+    font-family: "Lobster Two", sans-serif;
+}
+
+.products .product .cardsp .cardp-name p {
+    padding: 0;
+    font-size: 1rem;
+}
+
+.products .more-product {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0;
+}
+
+.products .more-product a {
+    text-decoration: none;
+    color: var(--pri);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.products .more-product a::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--pri);
+    bottom: 0%;
+    left: 0%;
+    transform: scaleX(0);
+    width: 100%;
+    transition: .5s;
+}
+
+.products .more-product a:hover::after {
+    transform: scaleX(.5);
+}
+
+/* Other CSS */
+.others {
+    padding: 2rem 7%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.others .other {
+    display: flex;
+    /* justify-content: start; */
+    /* overflow: hidden; */
+    /* flex-wrap: nowrap; */
+}
+
+.others .other .cardsp {
+    display: inline-block;
+    min-width: 33.33%;
+    box-sizing: border-box;
+    border: .2px solid silver;
+    /* border-radius: .3rem; */
+    width: 18rem;
+    height: 18rem;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+
+.others .other .cardsp img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .5s;
+}
+
+.others .other .cardsp .cardp-name {
+    position: absolute;
+    padding: .5rem;
+    height: 100%;
+    left: 0%;
+    top: 100%;
+    background: linear-gradient(120deg, rgba(228, 34, 120, .8) 5%, rgba(237, 123, 171, .8) 120%);
+    color: var(--fonc);
+    transition: .5s;
+}
+
+.others .other .cardsp:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    border-radius: .3rem;
+}
+
+.others .other .cardsp:hover .cardp-name {
+    top: 40%;
+    z-index: 2;
+}
+
+.others .other .cardsp:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.others .other .cardsp .cardp-name h4 {
+    padding: 0 0 .8rem;
+    font-size: 1.7rem;
+    font-family: "Lobster Two", sans-serif;
+}
+
+.others .other .cardsp .cardp-name p {
+    padding: 0;
+    font-size: 1rem;
+}
+
+.others .more-other {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0;
+}
+
+.others .more-other a {
+    text-decoration: none;
+    color: var(--pri);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.others .more-other a::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--pri);
+    bottom: 0%;
+    left: 0%;
+    transform: scaleX(0);
+    width: 100%;
+    transition: .5s;
+}
+
+.others .more-other a:hover::after {
+    transform: scaleX(.5);
+}
+
+/* Current Start */
+.current {
+    padding: 2rem 7%;
+}
+
+.current .ttl-current {
+    display: flex;
+    justify-content: center;
+}
+
+.current .ttl-current h2 {
+    padding: 2rem 0 4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.current .counts {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.current .counts .count-item {
+    text-align: center;
+    min-width: 30%;
+    max-width: 30%;
+}
+
+.current .counts .count-item h4 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.current .counts .count-item p {
+    font-size: 1rem;
+}
+/* Current End */

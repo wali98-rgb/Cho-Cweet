@@ -1,0 +1,173 @@
+.carousels {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../img/asset/burn-away-big-2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.carousels::after {
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(0deg, rgba(249, 249, 249, 1) 8%, rgba(249, 249, 249, 0) 50%);
+}
+
+.carousels .list-car .items {
+    position: absolute;
+    /* inset: 5% 4% 5% 4%; */
+    inset: 0 0 0 0;
+}
+
+.carousels .list-car .items>img {
+    width: 100%;
+    height: 105%;
+    object-fit: contain;
+    border-radius: .3rem;
+    animation: zoom 25s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.carousels .thumbnails {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: .5rem;
+}
+
+.carousels .thumbnails .items {
+    width: 150px;
+    height: 75px;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0 0 10px 1px silver;
+}
+
+.carousels .thumbnails .items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+.carousels .arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 100%;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.carousels .arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    font-family: monospace;
+    color: var(--pri);
+    cursor: pointer;
+    z-index: 100;
+    transition: .3s;
+}
+
+.carousels .arrows button:hover {
+    background-color: var(--pri);
+    color: var(--fonc);
+}
+
+/* Initial Animation */
+.carousels .list-car .items:nth-child(1) {
+    z-index: 1;
+}
+
+/* Action Next */
+.carousels.next .list-car .items:nth-child(1)>img {
+    position: absolute;
+    opacity: 0;
+    animation: slideNext .5s linear 1 forwards;
+}
+
+@keyframes slideNext {
+    to {
+        opacity: 1;
+    }
+}
+
+.carousels.next .thumbnails .items:nth-last-child(1) {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s liner 1 forwards;
+}
+
+@keyframes showThumbnail {
+    to {
+        width: 150px;
+        opacity: 1;
+    }
+}
+
+.carousels.next .thumbnails {
+    transform: translateX(150px);
+    animation: transformThumbnail .5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Action Prev */
+.carousels.prev .list-car .items:nth-child(2) {
+    z-index: 2;
+}
+
+.carousels.prev .list-car .items:nth-child(2)>img {
+    position: absolute;
+    opacity: 1;
+    animation: slidePrev .5s linear 1 forwards;
+}
+
+@keyframes slidePrev {
+    to {
+        opacity: 0;
+    }
+}
+
+.carousels.prev .thumbnails .items:nth-child(1) {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+
+/* Button Disable */
+.carousels.next .arrows button,
+.carousels.prev .arrows button {
+    pointer-events: none;
+}

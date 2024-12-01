@@ -1,0 +1,224 @@
+footer {
+    background-color: var(--bag);
+}
+
+footer .fc-form {
+    padding: 2.5rem 0 2rem;
+    width: 100%;
+}
+
+footer .fc-form .form-collab h1 {
+    padding: 1rem;
+}
+
+footer .fc-form .form-collab {
+    padding: 1rem 3%;
+    width: 100%;
+}
+
+footer .fc-form .form-collab .maps {
+    width: 100%;
+    padding: 0 0 0 1.45rem;
+    border-radius: .3rem;
+}
+
+footer .fc-form .form-collab .maps h1 {
+    padding: 1rem;
+}
+
+footer .fc-form .form-collab .maps .logo-mp {
+    text-align: center;
+}
+
+footer .fc-form .form-collab .maps .logo-mp a {
+    text-decoration: none;
+}
+
+footer .fc-form .form-collab .maps .logo-mp a img {
+    width: 11%;
+}
+
+footer .fc-form .form-collab .maps iframe {
+    border-radius: .3rem;
+    box-shadow: 0 0 3px 1px silver;
+    width: 100%;
+}
+
+footer .fc-form .form-collab form {
+    width: 100%;
+    margin: 0 1rem;
+    border-top: .5px solid var(--thr);
+}
+
+footer .fc-form .form-collab .forms h1 {
+    text-align: start;
+}
+
+footer .fc-form .form-collab form .form-inp {
+    margin: .5rem;
+}
+
+footer .fc-form .form-collab form .form-inp input,
+textarea {
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    width: 100%;
+    border: .3px solid var(--thr);
+}
+
+footer .fc-form .form-collab form .form-sub {
+    display: flex;
+    justify-content: center;
+}
+
+footer .fc-form .form-collab form .form-inp .inp-sub {
+    width: 60%;
+    border: none;
+    background-color: var(--pri);
+    color: var(--fonc);
+    font-weight: 500;
+}
+
+/* Border */
+
+footer .fc1 {
+    padding: 1rem 3%;
+    background-color: var(--bag);
+}
+
+footer .fc1 .fc-body {
+    border-top: .5px solid var(--thr);
+    padding: 2rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem !important;
+}
+
+footer .fc1 .fc-body .foot-col {
+    width: 40%;
+}
+
+footer .fc1 .fc-body .foot-col:first-child {
+    border-right: .2px solid var(--thr);
+}
+
+footer .fc1 .fc-body .foot-col .foot-title {
+    padding: 1rem 0;
+}
+
+footer .fc1 .fc-body .foot-col .foot-title h4 {
+    font-size: 1.6rem;
+}
+
+footer .fc1 .fc-body .foot-col .foot-content p {
+    text-align: left;
+}
+
+footer .fc1 .fc-body .foot-col .foot-content p a {
+    color: var(--fon2);
+    font-size: 1rem;
+    margin: 0 0 0 .5rem;
+}
+
+/* Email CSS */
+/* footer .fc1 .fc-body .foot-col .foot-content p i {
+    padding: .1rem .4rem 0;
+    margin: 0 .8rem 0 0;
+    font-size: 1.2rem;
+    color: white;
+    background-color: red;
+    border-radius: .2rem;
+} */
+
+footer .fc1 .fc-body .foot-col .foot-content a {
+    color: var(--pri);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* WhatsApp CSS */
+/* footer .fc1 .fc-body .foot-col .foot-content a i {
+    padding: .2rem .4rem .3rem;
+    background-color: green;
+    color: white;
+    border-radius: .2rem;
+} */
+
+footer .fc1 .fc-body .foot-col .foot-content .call-center p label {
+    /* background-color: var(--sec);
+    padding: .1rem .5rem; */
+    color: var(--fon2);
+    /* border-radius: .2rem; */
+}
+
+footer .fc1 .fc-body .foot-col .flogo {
+    width: 40%;
+}
+
+footer .fc1 .fc-body .foot-col h5 {
+    padding: 1rem 0 .5rem;
+    font-size: 1.4rem;
+}
+
+footer .fc1 .fc-foot {
+    padding: 2rem 0 1rem;
+}
+
+footer .fc1 .fc-foot .sosmed {
+    width: 100%;
+}
+
+footer .fc1 .fc-foot .sosmed p {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+footer .fc1 .fc-foot .sosmed p label a {
+    background-color: var(--thr);
+    padding: .2rem .5rem;
+    border-radius: .2rem;
+    color: var(--pri);
+    font-size: 1.3rem;
+}
+
+footer .fc1 .fc-foot .sosmed p label a:first-child {
+    margin: 0 0 0 .3rem;
+}
+
+footer .fc1 .fc-foot .down-app {
+    width: 100%;
+    text-align: end;
+}
+
+footer .fc1 .fc-foot .down-app img {
+    margin: 0 .1rem;
+    width: 18%;
+}
+
+/* Border */
+
+footer .fc2 {
+    padding: 1rem 3% 10rem;
+    border-top: 1px solid var(--sec);
+    background-color: var(--bag);
+}
+
+footer .fc2 p {
+    margin: 0;
+    padding: 1rem 0 .5rem;
+    font-size: .9rem;
+}
+
+footer .fc2 h4 {
+    margin: 0;
+    padding: 0 0 1rem;
+    font-size: 1.2rem;
+}
+
+footer .fc2 .shipping-img {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
